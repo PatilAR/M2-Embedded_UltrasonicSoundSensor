@@ -11,26 +11,24 @@ The project as the name suggests is based on Ultrasonic sensors.Ultrasonic senso
 
 The requirements for the program to run or for the code to be in effect are basic and  a great solution for the detection of clear objects.
 
-# Features,Hardware and Software:-
+# Features :-
 
 ![App Screenshot] (C:\Users\patil\OneDrive\Documents\ANKITA PATIL\LLTS)
 
-## a) HARDWARE :-
-#### 1] SimulIDE:
-      - SimulIDE provides AVR, Arduino and PIC microcontrollers that can be accessed just like other components. 
-      - Features like gpsim and simavr allow you to use PIC and AVR microcontrollers, respectively.
-#### 2] AVR:
-      - An automatic voltage regulator (AVR) is an electronic device that maintains a constant voltage level to electrical equipment on the same load.
-      - The AVR regulates voltage variations to deliver constant, reliable power supply.
+Sound velocity = 343.00 m/s = 34300 cm/s
 
-## b) SOFTWARE :-
-#### 1] ATmega328:
-      - ATmega328 is commonly used in many projects and autonomous systems where a simple, low-powered, low-cost micro-controller is needed
-      - Perhaps the most common implementation of this chip is on the popular Arduino development platform.
-#### 2] Sound:
-      - A sound sensor is defined as a module that detects sound waves through its intensity and converting it to electrical signals.
-#### 3] Display:
-      - A display device is an output device for presentation of information in visual or tactile form.
+Distance of Object (in cm) = (Sound velocity * TIMER Value) / 2
+
+                    = (34300 * TIMER Value) / 2
+
+                    = 17150  * Timer Value
+we have selected internal 8 MHz oscillator frequency for ATmega32, with No-presale for timer frequency. Then time to execute 1 instruction is 0.125 us So, timer gets incremented after 0.125 us time elapse.
+
+             = 17150 x (TIMER value) x 0.125 x 10^-6 cm
+
+             = 0.125 x (TIMER value)/58.30 cm
+
+             = (TIMER value) / 466.47 cm
  
 # Defining Our System:-
 
