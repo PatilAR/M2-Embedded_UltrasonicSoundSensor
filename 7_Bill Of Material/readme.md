@@ -59,6 +59,5 @@
         iv]Interface	3 Pin
         v]Shaft Length	15mm
         vi]Dimensions 	1 x 1 x 1cms 
-        
-Weight 	15 grams
+        vii]Weight :15 grams
       
