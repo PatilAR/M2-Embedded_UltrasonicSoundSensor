@@ -14,3 +14,5 @@ M2-Embedded_UltrasonicSoundSensor
 
 
 [![CI](https://github.com/PatilAR/M2-Embedded_UltrasonicSoundSensor/actions/workflows/main.yml/badge.svg)](https://github.com/PatilAR/M2-Embedded_UltrasonicSoundSensor/actions/workflows/main.yml)
+
+[![.github/workflows/c-cpp.yml](https://github.com/PatilAR/M2-Embedded_UltrasonicSoundSensor/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/PatilAR/M2-Embedded_UltrasonicSoundSensor/actions/workflows/c-cpp.yml)
